@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -10,19 +11,19 @@
         <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
 
         <!-- Bootsrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 
         <!-- Font awesome -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
 
         <!-- Owl carousel -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
 
         <!-- Template main Css -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
         
         <!-- Modernizr -->
-        <script src="assets/js/modernizr-2.6.2.min.js"></script>
+        <script src="{% static 'assets/js/modernizr-2.6.2.min.js' %}"></script>
 
 
     </head>
@@ -35,38 +36,7 @@
     
         <nav class="navbar navbar-static-top">
 
-            <div class="navbar-top">
 
-              <div class="container">
-                  <div class="row">
-
-                    <div class="col-sm-6 col-xs-12">
-
-                        <ul class="list-unstyled list-inline header-contact">
-                            <li> <i class="fa fa-phone"></i> <a href="tel:">+212 658 986 213 </a> </li>
-                             <li> <i class="fa fa-envelope"></i> <a href="mailto:contact@sadaka.org">contact@sadaka.org</a> </li>
-                       </ul> <!-- /.header-contact  -->
-                      
-                    </div>
-
-                    <div class="col-sm-6 col-xs-12 text-right">
-
-                        <ul class="list-unstyled list-inline header-social">
-
-                            <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-twitter"></i>  </a> </li>
-                            <li> <a href="#"> <i class="fa fa-google"></i>  </a> </li>
-                            <li> <a href="#"> <i class="fa fa-youtube"></i>  </a> </li>
-                            <li> <a href="#"> <i class="fa fa fa-pinterest-p"></i>  </a> </li>
-                       </ul> <!-- /.header-social  -->
-                      
-                    </div>
-
-
-                  </div>
-              </div>
-
-            </div>
 
             <div class="navbar-main">
               
@@ -82,7 +52,7 @@
 
                   </button>
                   
-                  <a class="navbar-brand" href="index.html"><img src="assets/images/sadaka-logo.png" alt=""></a>
+                  <a class="navbar-brand" href="index.html"><h4>PUREHEARTS</h4></a>
                   
                 </div>
 
@@ -136,7 +106,7 @@
 
             <div class="item active">
 
-              <img src="assets/images/slider/home-slider-1.jpg" alt="">
+              <img src="{% static 'assets/images/slider/home-slider-1.jpg' %}" alt="">
 
               <div class="container">
 
@@ -155,7 +125,7 @@
 
             <div class="item ">
 
-              <img src="assets/images/slider/home-slider-2.jpg" alt="">
+              <img src="{% static 'assets/images/slider/home-slider-2.jpg' %}" alt="">
 
               <div class="container">
 
@@ -176,7 +146,7 @@
 
             <div class="item ">
 
-              <img src="assets/images/slider/home-slider-3.jpg" alt="">
+              <img src="{% static 'assets/images/slider/home-slider-3.jpg' %}" alt="">
 
               <div class="container">
 
@@ -213,83 +183,53 @@
             <div class="row">
 
                 <div class="col-md-3 col-sm-6">
-                
-                  <div class="about-us-col">
-
-                        <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/our-mission-icon.png" alt="">
-                        </div>
-                        <h3 class="col-title">our mission</h3>
-                        <div class="col-details">
-
-                          <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                          
-                        </div>
-                        <a href="#" class="btn btn-primary"> Read more </a>
-                    
+                    <div class="about-us-col">
+                      <div class="col-icon-wrapper">
+                        <img src="{% static 'assets/images/icons/our-mission-icon.png' %}" alt="">
+                      </div>
+                      <h3 class="col-title">Our Mission</h3>
+                      <div class="col-details">
+                        <p>We are on a heartfelt journey to bring hope, nourishment, and positive change to those in need. Join hands with us as we endeavor to make a profound impact and craft a better world for all.</p>
+                      </div>
+                    </div>
                   </div>
                   
-                </div>
-
-
-                <div class="col-md-3 col-sm-6">
-                
-                  <div class="about-us-col">
-
-                        <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/make-donation-icon.png" alt="">
-                        </div>
-                        <h3 class="col-title">Make donations</h3>
-                        <div class="col-details">
-
-                          <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                          
-                        </div>
-                        <a href="#" class="btn btn-primary"> Read more </a>
-                    
+                  <div class="col-md-3 col-sm-6">
+                    <div class="about-us-col">
+                      <div class="col-icon-wrapper">
+                        <img src="{% static 'assets/images/icons/make-donation-icon.png' %}" alt="">
+                      </div>
+                      <h3 class="col-title">Make Donations</h3>
+                      <div class="col-details">
+                        <p>Your support fuels our mission. By contributing, you're helping us create real change and brighter futures. Together, let's make a positive impact that ripples through lives and generations.</p>
+                      </div>
+                    </div>
                   </div>
                   
-                </div>
-
-
-                <div class="col-md-3 col-sm-6">
-                
-                  <div class="about-us-col">
-
-                        <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/help-icon.png" alt="">
-                        </div>
-                        <h3 class="col-title">Help & support</h3>
-                        <div class="col-details">
-
-                          <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                          
-                        </div>
-                        <a href="#" class="btn btn-primary"> Read more </a>
-                    
+                  <div class="col-md-3 col-sm-6">
+                    <div class="about-us-col">
+                      <div class="col-icon-wrapper">
+                        <img src="{% static 'assets/images/icons/help-icon.png' %}" alt="">
+                      </div>
+                      <h3 class="col-title">Help & Support</h3>
+                      <div class="col-details">
+                        <p>Compassion knows no bounds. Your involvement, whether big or small, makes a world of difference. Together, we can uplift lives, provide hope, and create a nurturing environment for those in need.</p>
+                      </div>
+                    </div>
                   </div>
                   
-                </div>
-
-
-                <div class="col-md-3 col-sm-6">
-                
-                  <div class="about-us-col">
-
-                        <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/programs-icon.png" alt="">
-                        </div>
-                        <h3 class="col-title">our programs</h3>
-                        <div class="col-details">
-
-                          <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                          
-                        </div>
-                        <a href="#" class="btn btn-primary"> Read more </a>
-                    
+                  <div class="col-md-3 col-sm-6">
+                    <div class="about-us-col">
+                      <div class="col-icon-wrapper">
+                        <img src="{% static 'assets/images/icons/programs-icon.png' %}" alt="">
+                      </div>
+                      <h3 class="col-title">Our Programs</h3>
+                      <div class="col-details">
+                        <p>Through dedicated programs, we're weaving stories of change and progress. Join us in crafting a better future, empowering communities, and sowing seeds of lasting transformation.</p>
+                      </div>
+                    </div>
                   </div>
                   
-                </div>
                 
 
                 
@@ -302,206 +242,205 @@
     <div class="section-home home-reasons">
 
         <div class="container">
-
+    
             <div class="row">
                 
                 <div class="col-md-6">
-
+    
                     <div class="reasons-col animate-onscroll fadeIn">
-
-                        <img src="assets/images/reasons/we-fight-togother.jpg" alt="">
-
+    
+                        <img src="{% static 'assets/images/reasons/we-fight-togother.jpg' %}" alt="">
+    
                         <div class="reasons-titles">
-
-                            <h3 class="reasons-title">We fight together</h3>
-                            <h5 class="reason-subtitle">We are humans</h5>
+    
+                            <h3 class="reasons-title">We Fight Together</h3>
+                            <h5 class="reason-subtitle">United for Change</h5>
                             
                         </div>
-
+    
                         <div class="on-hover hidden-xs">
                             
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium, itaque facilis nesciunt ab omnis cumque similique ipsa veritatis perspiciatis, harum ad at nihil molestias, dignissimos sint consequuntur. Officia, fuga.</p>
-
-
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium, itaque facilis nesciunt ab omnis cumque similique ipsa veritatis perspiciatis, harum ad at nihil molestias, dignissimos sint consequuntur. Officia, fuga.</p>
-
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium, itaque facilis nesciunt ab omnis cumque similique ipsa veritatis perspiciatis, harum ad at nihil molestias, dignissimos sint consequuntur. Officia, fuga.</p>
+                                <p> In a world where challenges can seem insurmountable, we stand undeterred, united in our commitment to confront adversity head-on. Our mission is to create a tapestry of strength, woven by diverse hands, each thread representing resilience and determination.</p>
+    
+                                <p> Through unwavering solidarity, we champion causes that matter most, forging a path that leaves an indelible mark. Every step forward, every act of courage, and every instance of lending a helping hand contributes to the symphony of positive change we create.</p>
+    
+                                <p> Together, we illuminate the darkness, celebrate triumphs, and inspire hope. By fighting as one, we transcend limitations and pave the way for a future defined by unity, impact, and lasting transformation.</p>
                                 
                         </div>
                     </div>
                     
                 </div>
-
-
+    
+    
                 <div class="col-md-6">
-
+    
                     <div class="reasons-col animate-onscroll fadeIn">
-
-                        <img src="assets/images/reasons/we-care-about.jpg" alt="">
-
+    
+                        <img src="{% static 'assets/images/reasons/we-care-about.jpg' %}" alt="">
+    
                         <div class="reasons-titles">
-
-                            <h3 class="reasons-title">WE care about others</h3>
-                            <h5 class="reason-subtitle">We are humans</h5>
+    
+                            <h3 class="reasons-title">Caring for Others</h3>
+                            <h5 class="reason-subtitle">Empathy in Action</h5>
                             
                         </div>
-
+    
                         <div class="on-hover hidden-xs">
                             
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium, itaque facilis nesciunt ab omnis cumque similique ipsa veritatis perspiciatis, harum ad at nihil molestias, dignissimos sint consequuntur. Officia, fuga.</p>
-
-
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium, itaque facilis nesciunt ab omnis cumque similique ipsa veritatis perspiciatis, harum ad at nihil molestias, dignissimos sint consequuntur. Officia, fuga.</p>
-
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium, itaque facilis nesciunt ab omnis cumque similique ipsa veritatis perspiciatis, harum ad at nihil molestias, dignissimos sint consequuntur. Officia, fuga.</p>
+                                <p> At the core of our mission lies a deep-rooted compassion that propels us to extend a helping hand to those in need. Empathy is our guiding force, weaving a tapestry of kindness that reaches across borders and boundaries.</p>
+    
+                                <p> We believe that every gesture of care and support is a ripple in the pond of humanity, creating waves of positive impact that extend far beyond our immediate reach. By standing together, hand in hand, we demonstrate that even the smallest acts of compassion can bridge divides and heal wounds.</p>
+    
+                                <p> Through our collective efforts, we foster a world where care and support are fundamental values that bridge communities. Together, we create a brighter and more connected future, where everyone's well-being is championed and no one is left behind.</p>
                                 
                         </div>
-
-
+    
+    
                     </div>
                     
                 </div>
-
-
+    
+    
             </div>
           
-  
-
+    
         </div>
       
-
+    
     </div> <!-- /.home-reasons -->
+    
 
     <div class="section-home our-causes animate-onscroll fadeIn">
 
         <div class="container">
-
+    
             <h2 class="title-style-1">Our Causes <span class="title-under"></span></h2>
-
+    
             <div class="row">
-
+    
                 <div class="col-md-3 col-sm-6">
-
+    
                     <div class="cause">
-
-                        <img src="assets/images/causes/cause-hunger.jpg" alt="" class="cause-img">
-
+    
+                        <img src="{% static 'assets/images/causes/cause-hunger.jpg' %}" alt="" class="cause-img">
+    
                         <div class="progress cause-progress">
                           <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
                             10$ / 500$
                           </div>
                         </div>
-
-                        <h4 class="cause-title"><a href="#">HUNGER AND POVERTY </a></h4>
+    
+                        <h4 class="cause-title"><a href="#">Hunger and Poverty</a></h4>
                         <div class="cause-details">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                            In the face of hunger's relentless grip and poverty's suffocating grasp, we extend our hands with a promise to nourish lives and ignite change. Together, we're sowing seeds of hope, ensuring no one is left behind on the journey towards a world without hunger.
                         </div>
-
+    
                         <div class="btn-holder text-center">
-
-                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+    
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
                           
                         </div>
-
+    
                         
-
+    
                     </div> <!-- /.cause -->
                     
                 </div> 
-
+    
                 <div class="col-md-3 col-sm-6">
-
+    
                     <div class="cause">
-
-                        <img src="assets/images/causes/cause-education.jpg" alt="" class="cause-img">
-
+    
+                        <img src="{% static 'assets/images/causes/cause-education.jpg' %}" alt="" class="cause-img">
+    
                         <div class="progress cause-progress">
                           <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                             400$ / 700$
                           </div>
                         </div>
-
-                        <h4 class="cause-title"><a href="#">EDUCATION AND TRAINING</a></h4>
+    
+                        <h4 class="cause-title"><a href="#">Education and Training</a></h4>
                         <div class="cause-details">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                            Knowledge is a catalyst for transformation. We believe in breaking the chains of ignorance, providing pathways to education, and nurturing a world where every mind can flourish. Join us in empowering futures and building bridges to brighter horizons.
                         </div>
-
+    
                         <div class="btn-holder text-center">
-
-                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+    
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
                           
                         </div>
-
+    
                         
-
+    
                     </div> <!-- /.cause -->
                     
                 </div>
-
-
+    
+    
                 <div class="col-md-3 col-sm-6">
-
+    
                     <div class="cause">
-
-                        <img src="assets/images/causes/cause-rights.jpg" alt="" class="cause-img">
-
+    
+                        <img src="{% static 'assets/images/causes/cause-rights.jpg' %}" alt="" class="cause-img">
+    
                         <div class="progress cause-progress">
                           <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
                             400$ / 1000$
                           </div>
                         </div>
-
-                        <h4 class="cause-title"><a href="#">HUMAN RIGHTS</a></h4>
+    
+                        <h4 class="cause-title"><a href="#">Human Rights</a></h4>
                         <div class="cause-details">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                            Every individual's dignity deserves to be upheld, and every voice deserves to be heard. Our mission is to advocate for justice, equality, and the inherent rights of all. Join us in standing as a beacon of hope, united against injustice and oppression.
                         </div>
-
+    
                         <div class="btn-holder text-center">
-
-                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+    
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
                           
                         </div>
-
+    
                         
-
+    
                     </div> <!-- /.cause -->
                     
                 </div>
-
+    
                 <div class="col-md-3 col-sm-6">
-
+    
                     <div class="cause">
-
-                        <img src="assets/images/causes/cause-culture.jpg" alt="" class="cause-img">
-
+    
+                        <img src="{% static 'assets/images/causes/cause-culture.jpg' %}" alt="" class="cause-img">
+    
                         <div class="progress cause-progress">
                           <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                             400$ / 700$
                           </div>
                         </div>
-
-                        <h4 class="cause-title"><a href="#">ARTS AND CULTURE </a></h4>
+    
+                        <h4 class="cause-title"><a href="#">Arts and Culture</a></h4>
                         <div class="cause-details">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                            The tapestry of culture weaves stories of identity, expression, and connection. Through art, we bridge divides, celebrate diversity, and empower communities. Join us in nurturing creativity, shaping identities, and cultivating a world enriched by shared cultural heritage.
                         </div>
-
+    
                         <div class="btn-holder text-center">
-
-                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+    
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
                           
                         </div>
-
+    
                         
-
+    
                     </div> <!-- /.cause -->
                     
                 </div>
-
+    
             </div>
-
+    
         </div>
         
     </div> <!-- /.our-causes -->
+    
 
     
 
@@ -516,17 +455,17 @@
 
             <ul class="owl-carousel list-unstyled list-sponsors">
 
-              <li> <img src="assets/images/sponsors/bus.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/wikimedia.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/one-world.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/wikiversity.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/united-nations.png" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/bus.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikimedia.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/one-world.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikiversity.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/united-nations.png' %}" alt=""></li>
 
-              <li> <img src="assets/images/sponsors/bus.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/wikimedia.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/one-world.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/wikiversity.png" alt=""></li>
-              <li> <img src="assets/images/sponsors/united-nations.png" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/bus.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikimedia.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/one-world.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikiversity.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/united-nations.png' %}" alt=""></li>
 
             </ul>
 
@@ -548,61 +487,26 @@
         <div class="footer-main">
             <div class="container">
                 
-                <div class="row">
-                    <div class="col-md-4">
-
+                    <div class="row">
+                      <div class="col-md-4">
                         <div class="footer-col">
-
-                            <h4 class="footer-title">About us <span class="title-under"></span></h4>
-
+                            <h4 class="footer-title">About Us <span class="title-under"></span></h4>
                             <div class="footer-content">
-
                                 <p>
-                                    <strong>Sadaka</strong> ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                                    At <strong>Sadaka</strong>, we believe in the power of compassion and collective action. Our journey began with a simple vision: to create a world where every act of kindness contributes to meaningful change.
                                 </p> 
-
                                 <p>
-                                    ILorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna.
+                                    Through dedicated efforts, tireless commitment, and the unwavering support of individuals like you, we are making strides towards addressing pressing issues and creating positive impact. From providing essential resources to those in need, to championing causes that uplift communities, our mission is guided by a shared sense of responsibility and empathy.
                                 </p>
-
+                                <p>
+                                    Join us in our quest to make a lasting difference. Together, we can transform lives, create brighter futures, and build a more compassionate world for all.
+                                </p>
                             </div>
-                            
                         </div>
-
                     </div>
+                
 
-                    <div class="col-md-4">
-
-                        <div class="footer-col">
-
-                            <h4 class="footer-title">LAST TWEETS <span class="title-under"></span></h4>
-
-                            <div class="footer-content">
-                                <ul class="tweets list-unstyled">
-                                    <li class="tweet"> 
-
-                                        20 Surprise Eggs, Kinder Surprise Cars 2 Thomas Spongebob Disney Pixar  http://t.co/fTSazikPd4 
-
-                                    </li>
-
-                                    <li class="tweet"> 
-
-                                        20 Surprise Eggs, Kinder Surprise Cars 2 Thomas Spongebob Disney Pixar  http://t.co/fTSazikPd4 
-
-                                    </li>
-
-                                    <li class="tweet"> 
-
-                                        20 Surprise Eggs, Kinder Surprise Cars 2 Thomas Spongebob Disney Pixar  http://t.co/fTSazikPd4 
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                            
-                        </div>
-
-                    </div>
+                    
 
 
                     <div class="col-md-4">
@@ -777,13 +681,13 @@
     <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')</script>
 
     <!-- Bootsrap javascript file -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
     
     <!-- owl carouseljavascript file -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
 
     <!-- Template main javascript -->
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
